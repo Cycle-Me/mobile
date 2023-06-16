@@ -1,3 +1,82 @@
 <resources>
     <string name="app_name">CycleMe</string>
+
+    <string name="logout_message_confirmation">Are you sure want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="enter_a_valid_email">Enter a valid email</string>
+    <string name="password_must_be_filled">Password must be filled</string>
+    <string name="minimum_8_characters">Minimum 8 characters</string>
+    <string name="emailexample">abc@mail.com</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_example">********</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="full_name">Full Name</string>
+    <string name="home">Home</string>
+    <string name="feed">Feed</string>
+    <string name="recycle">Recycle</string>
+    <string name="market">Market</string>
+    <string name="account">Account</string>
+    <string name="rewards">Rewards</string>
+    <string name="hi">Hi,</string>
+    <string name="let_s_reduce_waste_on_earth_by_recycling_nthanks_for_your_contribution">Let\'s reduce waste on earth by recycling.\nThanks for your contribution</string>
+    <string name="share_cycleme_to_your_friends">Share CycleMe to your friends</string>
+    <string name="get_started">Get Started</string>
+    <string name="get_insights_about_waste_recycling">Get insights about waste recycling</string>
+    <string name="popular_recycling_material">Popular Recycling Material</string>
+    <string name="browse_materials_that_are_commonly_recycled">Browse materials that are commonly recycled</string>
+    <string name="upload_photo_title">Use AI to make idea recommendations from your photo</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="result">Result</string>
+    <string name="result_description">based on your photos, AI analysis recommends the following ideas</string>
+    <string name="category">Category: </string>
+    <string name="accuracy">Accuracy: </string>
+    <string name="switch_camera">Switch Camera</string>
+    <string name="failed_to_take_picture">Failed to take picture</string>
+    <string name="failed_to_open_camera">Failed to open camera</string>
+    <string name="submit">Submit</string>
+    <string name="choose_the_materials_you_want_to_recycle_into_high_value_items">Choose the materials you want to recycle into high-value items</string>
+
+    <!--    Article-->
+    <string-array name="titles">
+        <item>Why Is Recycling Important? 10 Benefits of Recycling</item>
+        <item>How Does Recycling Help the Environment?</item>
+        <item>Common Recycling Myths</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Why is Recycling Important?\n\n
+            1. Protects Ecosystems and Wildlife\n
+            When we recycle, we lessen disruption to the natural world. When we cut down fewer trees and forests, we are preventing harm to animals. By reducing disruption and damage to the natural world, we help preserve ecosystems and wildlife.\n\n
+            2. Conserves Our Natural Resources\nSome of the world’s natural resources are in short supply, and when we recycle, we help conserve these natural resources. When we recycle paper, we save forests and trees. When we recycle plastic, it takes up a lot of solid waste and can take centuries to break down. In addition to this, most plastic comes from fossil fuel hydrocarbons. Recycling metals reduces the need to extract new metal ore while recycling glass reduces our need for certain raw materials like sand.\n\n
+            3. Saves Energy\nMaking products from recycled materials requires less energy than making them from new, raw materials. It takes much less energy to make products out of recycled materials than from raw materials. For example, recycling one glass bottle saves enough power to light a 100-watt light bulb for four hours.\n\n
+            4. Reduces the Need to Harvest New Materials\nWhen we recycle, it reduces our need to harvest raw materials. Our increasing demand for these raw materials also displaces people who live near forests or around river systems. When we recycle, we reduce the possibility of damaging someone else’s land or community.\n\n
+            5. Reduces Carbon Emissions\nRecycling takes up less energy, which reduces our carbon footprint and emissions. Reducing our carbon footprint helps minimize methane-release waste from landfill sites, which contributes to climate change.\n\nSource: https://northhillbottledepot.ca/why-is-recycling-important-10-benefits-of-recycling/</item>
+
+        <item>Here are a few ways recycling helps the environment and fight climate change:\n\n
+            1. Recycling Conserves Resources\nWhen we recycle plastic, we reduce the need for more plastic to be manufactured. By recycling paper, we do our part to lessen deforestation and save trees from being cut down. Separating cans and other metals helps to cut down on damaging mining and our growing need for raw materials.\n\n
+            2. Recycling Saves Energy\nIt takes much more energy to create industrial-grade materials from scratch than it does just to reform old materials and reuse them. For example, it is estimated that “recycling aluminum saves 90% to 95% of the energy needed to make aluminum from bauxite ore.” Recycling saves energy because recycled materials don’t require factories to expend so much greenhouse gas emissions than they would if they had created the same item again from scratch using raw materials.\n\n
+            3. Recycling Protects the Environment\nWhen we cut down on the amount of new materials and natural resources we need to extract from the earth, whether through farming, mining, logging, etc., we protect vulnerable ecosystems and wildlife from harm or eradication and allow them to exist for generations to come. Recycling materials emits way less greenhouse gases into the environment than primary production.\n\nSource: https://www.goodwall.io/blog/how-does-recycling-help-the-environment/</item>
+        <item>Learn the reality behind the myths to ensure you\'re protecting others and the environment by recycling right.\n\n
+            Myth: Recycling arrows on a container mean it is definitely recyclable\n
+            Reality: Only in some cases. Check the table above and local program guidelines to see what\'s recyclable and what\'s not. Many plastics cannot be made into new products. Recycle plastics by shape: bottles, jars, jugs and tubs.\n\n
+
+            Myth: Containers must be squeaky clean in order to be recycled\n
+            Reality: Containers should be clean, but don\'t have to be spotless. While all bottles, cans and containers should be clean, dry and free of most food waste before you place them in your recycling container, they don’t need to be spotless. The goal is to make sure they are clean enough to avoid contaminating other materials, like paper, or your un-lined kitchen recycling bin. Try using a spatula to scrape cans and jars, and putting recyclables in your sink among the dishes you are rinsing to share that same water to rinse and remove residue.\n\n
+
+            Myth: Even if an item shouldn\'t go in the bin, it will get sorted anyway\n
+            Reality: False. Non-recyclable items are not accepted curbside. Non-recyclable items contaminate recyclables. Recyclables stuck inside plastic bags are at risk for never making it through the recycling process. Conversely, recyclable items placed into garbage containers are hauled to a landfill and cannot be recovered effectively. The right thing to do is put the right recyclables in the recycling container and non-recyclables into garbage containers. Recyclables with the greatest impact are bottles, cans, paper and cardboard.\n\nSource: https://www.wm.com/us/en/recycle-right/recycling-101</item>
+    </string-array>
+
+    <string-array name="images">
+        <item>@drawable/article_1</item>
+        <item>@drawable/article_2</item>
+        <item>@drawable/article_3</item>
+    </string-array>
 </resources>

@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/home"
+    <item
+        android:id="@+id/navigation_home"
         android:enabled="true"
         android:icon="@drawable/ic_home_24"
-        android:title="Home"
+        android:title="@string/home"
         />
-    <item android:id="@+id/feed"
-        android:enabled="true"
-        android:icon="@drawable/ic_feed_24"
-        android:title="Feed"
-        />
-    <item android:id="@+id/recycle"
+<!--    <item android:id="@+id/navigation_feed"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_local_florist_24"-->
+<!--        android:title="@string/feed"-->
+<!--        />-->
+    <item android:id="@+id/navigation_recycle"
         android:enabled="true"
         android:icon="@drawable/ic_recycling_24"
-        android:title="Recycle"
+        android:title="@string/recycle"
         />
-    <item android:id="@+id/market"
-        android:enabled="true"
-        android:icon="@drawable/ic_shopping_cart_24"
-        android:title="Market"
-        />
-    <item android:id="@+id/account"
-        android:enabled="true"
-        android:icon="@drawable/ic_account_circle_24"
-        android:title="Account"
-        />
+<!--    <item android:id="@+id/navigation_rewards"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_monetization_on_24"-->
+<!--        android:title="@string/rewards"-->
+<!--        />-->
+<!--    <item android:id="@+id/navigation_account"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_account_circle_24"-->
+<!--        android:title="@string/account"-->
+<!--        />-->
 </menu>

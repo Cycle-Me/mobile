@@ -1,0 +1,49 @@
+<vector android:height="176.51613dp" android:viewportHeight="152"
+    android:viewportWidth="310" android:width="360dp"
+    xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M16,0L294,0A16,16 0,0 1,310 16L310,135.29A16,16 0,0 1,294 151.29L16,151.29A16,16 0,0 1,0 135.29L0,16A16,16 0,0 1,16 0z"/>
+        <path android:pathData="M16,0L294,0A16,16 0,0 1,310 16L310,135.29A16,16 0,0 1,294 151.29L16,151.29A16,16 0,0 1,0 135.29L0,16A16,16 0,0 1,16 0z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:endX="297.27" android:endY="173.19"
+                    android:startX="3.88" android:startY="2.7" android:type="linear">
+                    <item android:color="#FF62428A" android:offset="0"/>
+                    <item android:color="#FF8D6DB6" android:offset="1"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path android:fillAlpha="0.8"
+            android:pathData="M321.64,114.81C334.29,111.84 337.11,52 360,52V177H-18C-17.59,160.17 -14.16,126.51 -3.77,126.51C9.22,126.51 21.47,144.98 32.61,144.98C43.74,144.98 52.9,135.74 68.98,135.74C85.07,135.74 88.66,144.98 105.36,144.98C122.06,144.98 126.89,122.2 141.74,122.2C156.59,122.2 162.03,143.13 178.12,143.13C194.2,143.13 201.01,130.82 214,130.82C226.99,130.82 233.18,143.13 249.88,143.13C266.58,143.13 273.39,101.88 287.25,101.88C301.1,101.88 309,117.78 321.64,114.81Z" android:strokeAlpha="0.8">
+            <aapt:attr name="android:fillColor">
+                <gradient android:endX="230.27" android:endY="97.75"
+                    android:startX="293" android:startY="52" android:type="linear">
+                    <item android:color="#FF7463D9" android:offset="0"/>
+                    <item android:color="#FFA298DF" android:offset="1"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path android:fillAlpha="0.8"
+            android:pathData="M322.88,135.39C337,140.5 351.5,131 360,121.26V179H-18C-17.59,162.21 -14.78,133.54 -4.39,133.54C8.6,133.54 13.55,152.59 24.69,152.59C35.82,152.59 46.96,147.06 58.71,147.06C70.47,147.06 68.61,157.5 85.32,157.5C102.02,157.5 109.44,145.21 124.29,145.21H158.94C175.02,145.21 189.25,107.13 202.24,107.13C215.23,107.13 226.99,121.26 243.69,121.26C260.4,121.26 267.57,93 281.43,93C295.29,93 308.76,130.27 322.88,135.39Z" android:strokeAlpha="0.8">
+            <aapt:attr name="android:fillColor">
+                <gradient android:endX="247.75" android:endY="140.97"
+                    android:startX="293" android:startY="93" android:type="linear">
+                    <item android:color="#FF7463D9" android:offset="0"/>
+                    <item android:color="#FFA298DF" android:offset="1"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path android:fillAlpha="0.9"
+            android:pathData="M325,149.17C339,157.1 355.5,147.34 360,140.63V176H-18C-17.59,173.97 -14.16,140.63 -3.77,140.63C9.22,140.63 14.79,157.1 25.92,157.1C37.06,157.1 37.68,152.83 53.76,152.83C69.85,152.83 72.94,163.8 89.65,163.8C106.35,163.8 126.15,149.17 140.99,149.17C155.84,149.17 165.91,157.1 182,157.1C198.09,157.1 202.24,137.59 215.23,137.59C228.23,137.59 232.56,147.34 249.26,147.34C265.96,147.34 281.18,126 295.04,126C308.9,126 311,141.24 325,149.17Z" android:strokeAlpha="0.9">
+            <aapt:attr name="android:fillColor">
+                <gradient android:endX="295" android:endY="163"
+                    android:startX="286" android:startY="131" android:type="linear">
+                    <item android:color="#FFC6B3EE" android:offset="0"/>
+                    <item android:color="#FF9163F2" android:offset="1"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path android:fillAlpha="0.05" android:fillColor="#CCCCCC"
+            android:fillType="evenOdd"
+            android:pathData="M0,106V15C0,6.72 6.72,0 15,0L189,0L0,106Z" android:strokeAlpha="0.05"/>
+    </group>
+</vector>
