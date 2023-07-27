@@ -4,14 +4,13 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.cycleme.model.PredictResponse
 import com.example.cycleme.repository.api.ApiConfig
+import com.example.cycleme.utils.Result
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.MultipartBody
-import java.lang.Exception
-import com.example.cycleme.data.Result
-import com.example.cycleme.model.PredictResponse
 
 class UploadPhotoViewModel : ViewModel() {
     private val _resultUploadPhotoResponse = MutableLiveData<Result<PredictResponse>>()

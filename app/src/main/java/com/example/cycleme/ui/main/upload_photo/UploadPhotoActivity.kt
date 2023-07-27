@@ -6,22 +6,21 @@ import android.content.pm.PackageManager
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.cycleme.databinding.ActivityUploadPhotoBinding
-import com.example.cycleme.repository.local.SessionPreferences
 import com.example.cycleme.ui.main.camera.CameraActivity
 import com.example.cycleme.ui.main.upload_result.UploadResultActivity
+import com.example.cycleme.utils.Result
 import com.example.cycleme.utils.reduceImageSize
 import com.example.cycleme.utils.rotateFile
 import com.example.cycleme.utils.uriToFile
-import com.example.cycleme.data.Result
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
@@ -29,7 +28,6 @@ import java.io.File
 
 class UploadPhotoActivity : AppCompatActivity() {
     private lateinit var binding: ActivityUploadPhotoBinding
-    private lateinit var mSessionPreferences: SessionPreferences
     private val uploadPhotoViewModel by viewModels<UploadPhotoViewModel>()
 
     private var getFile: File? = null
@@ -38,8 +36,6 @@ class UploadPhotoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityUploadPhotoBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        mSessionPreferences = SessionPreferences(this)
 
         if (!allPermissionsGranted()) {
             ActivityCompat.requestPermissions(
@@ -113,7 +109,7 @@ class UploadPhotoActivity : AppCompatActivity() {
         if (result.resultCode == RESULT_OK) {
             val selectedImg = result.data?.data as Uri
             selectedImg.let { uri ->
-                val myFile = uriToFile(uri, this@UploadPhotoActivity)
+                val myFile = uriToFile(uri, this)
                 getFile = myFile
                 binding.ivImage.setImageURI(uri)
             }
@@ -121,7 +117,6 @@ class UploadPhotoActivity : AppCompatActivity() {
     }
 
     private fun uploadImage() {
-
         showLoading(true)
 
         if (getFile != null) {
@@ -133,7 +128,7 @@ class UploadPhotoActivity : AppCompatActivity() {
 
             uploadPhotoViewModel.uploadPhoto(imageMultipart)
 
-            uploadPhotoViewModel.resultUploadPhotoResponse.observe(this@UploadPhotoActivity) {
+            uploadPhotoViewModel.resultUploadPhotoResponse.observe(this) {
                 when (it) {
                     is Result.Success -> {
                         val bundle = Bundle().apply {
@@ -185,16 +180,11 @@ class UploadPhotoActivity : AppCompatActivity() {
     }
 
     private fun showToast(text: String) {
-        Toast.makeText(this@UploadPhotoActivity, text, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
     }
 
     private fun showLoading(state: Boolean) {
-        val progressBar = binding.progressBar
-        if (state) {
-            progressBar.visibility = View.VISIBLE
-        } else {
-            progressBar.visibility = View.INVISIBLE
-        }
+        binding.progressBar.visibility = if (state) View.VISIBLE else View.GONE
     }
 
     override fun onSupportNavigateUp(): Boolean {

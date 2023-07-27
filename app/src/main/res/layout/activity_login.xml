@@ -83,20 +83,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-        <com.example.cycleme.ui.customview.EditTextEmail
-            android:id="@+id/ed_login_email"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="8dp"
             android:alpha="0"
-            android:background="@drawable/custom_input"
-            android:drawablePadding="8dp"
-            android:inputType="textEmailAddress"
-            android:padding="12dp"
+            android:textColorHint="@color/grayBold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_email">
+
+            <com.example.cycleme.ui.customview.EditTextEmail
+                android:id="@+id/ed_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input"
+                android:padding="12dp"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/tv_password"
@@ -109,16 +116,16 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ed_login_email" />
+            app:layout_constraintTop_toBottomOf="@+id/til_email" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="8dp"
             android:alpha="0"
             android:textColorHint="@color/grayBold"
-            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_password"
@@ -130,8 +137,8 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/custom_input"
                 android:inputType="textPassword"
-                android:paddingEnd="40dp"
                 android:padding="12dp"
+                android:paddingEnd="40dp"
                 tools:ignore="RtlSymmetry" />
 
         </com.google.android.material.textfield.TextInputLayout>

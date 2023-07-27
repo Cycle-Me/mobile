@@ -24,6 +24,17 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:alpha="0"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_register" />
+
+        <ImageView
             android:id="@+id/iv_asset_background1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

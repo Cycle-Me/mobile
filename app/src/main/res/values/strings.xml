@@ -14,7 +14,7 @@
     <string name="login">Login</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="register">Register</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="full_name">Full Name</string>
     <string name="home">Home</string>
@@ -42,8 +42,50 @@
     <string name="failed_to_open_camera">Failed to open camera</string>
     <string name="submit">Submit</string>
     <string name="choose_the_materials_you_want_to_recycle_into_high_value_items">Choose the materials you want to recycle into high-value items</string>
+    <string name="desc_detail_recycle">Here\'s some recommendation ideas</string>
+    <string name="upload_story">Upload Story</string>
+    <string name="picture_uploaded_by_user">Picture uploaded by user</string>
+    <string name="c_points">C-Points</string>
+    <string name="_0">0</string>
+    <string name="get_to_know_c_points">Get to know C-Points</string>
+    <string name="what_is_c_points">What is C-Points?</string>
+    <string name="what_is_c_points_description">C-Points is a virtual point accumulated automatically each time you have done scanning and upload your work. You’ll obtain 10 C-Points for every work uploaded on feed.</string>
+    <string name="what_can_c_points_do">What can C-Points do?</string>
+    <string name="what_can_c_points_do_description">You can redeem your C-points for rewards once it has reached some certain value on the reedem page. Remember, rewards can only be exchanged if your points are met its requirements.</string>
+    <string name="reward_details">Reward Details</string>
+    <string name="c_points_needed">C-Points needed</string>
+    <string name="points">points</string>
+    <string name="details">Details</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="change_profile">Change Profile</string>
+    <string name="faq">FAQ</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="logout">Logout</string>
+    <string name="app_version">App Version 1.0</string>
+    <string name="save">Save</string>
+    <string name="what_is_cycleme">What is CycleMe?</string>
+    <string name="cycleme_description">CycleMe is a mobile application that enables users to classify waste based on pictures they capture. The app requires camera access and an active internet connection. With CycleMe, you can share your recycling journey through the Feed feature, where you can post images and videos accompanied by captions. Other than that, you can interact with other users by leaving comments on their posts. If you have recycled products to sell, our Marketplace feature has you covered. Please ensure that you follow any guidelines or restrictions provided by the app for content upload in the Feed feature and adhere to specific policies related to selling products in the Marketplace. We hope you enjoy using CycleMe!</string>
+    <string name="how_to_use_description">The waste classification feature in CycleMe enables users to capture a picture of waste, and the application will then display the type of waste along with recycling recommendations. To utilize this feature, follow these steps:\n\n1. Grant Camera Access:\n\u2022 Allow your device to access the camera by adjusting the necessary permissions in the device settings.\n\n2. Capture Waste Image:\n\u2022 Tap the camera icon within the app.\n\u2022 Position the garbage in the frame using your device\'s camera. Ensure good lighting conditions when capturing waste images\n\u2022 Capture the image by pressing the shutter button.\n\n3. View Waste Classification:\n\u2022 The app will classify the waste and display the classification label. It may require some time for processing\n\u2022 Additionally, it will provide recommendations for recycled products related to the waste category.\n\n4. Explore Recycled Product Options:\n\u2022 If you are interested in creating a specific product, tap on one of the recommended recycled products.</string>
+    <string name="title">Title</string>
+    <string name="feedback_title">Feedback Title</string>
+    <string name="feedback">Feedback</string>
+    <string name="write_feedback">Write Feedback</string>
+    <string name="send">Send</string>
+    <string name="notification">Notification</string>
+    <string name="you_don_t_have_notification_yet">You don\'t have notification yet</string>
+    <string name="textiles">Textiles</string>
+    <string name="plastic">Plastic</string>
+    <string name="upload_feed">Upload Feed</string>
+    <string name="let_s_share_your_work">Let\'s share your work</string>
+    <string name="description">Description</string>
+    <string name="you_can_explore_the_popular_recycling_categories">You can explore the popular recycling categories</string>
+    <string name="share_the_excitement_to_your_friends">Share the excitement to your friends</string>
+    <string name="share_caption2">Let’s make the world a better place\nBy Sharing CycleMe app to your friends :)</string>
+    <string name="share_cycleme">Share CycleMe</string>
+    <string name="share_cycleme_description">CycleMe is a mobile application that empowers users to classify waste based on pictures they capture or upload. Once a photo is uploaded, the app will identify the waste type and provide recommendations on recycled products tutorials. With CycleMe, users can share their recycling journey through the Feed feature, where they can post image accompanied by captions. By uploading an image to the Feed, users will earn points that can be redeemed for exciting rewards. We highly value user feedback as it contributes to the ongoing improvement of our application. We hope you enjoy your experience with CycleMe!\n\nYou can download CycleMe through this link: https://ipb.link/cycle-me-app</string>
 
-    <!--    Article-->
+
+    <!-- Article Items -->
     <string-array name="titles">
         <item>Why Is Recycling Important? 10 Benefits of Recycling</item>
         <item>How Does Recycling Help the Environment?</item>
@@ -79,4 +121,73 @@
         <item>@drawable/article_2</item>
         <item>@drawable/article_3</item>
     </string-array>
+
+    <!-- Recycle Items -->
+    <string-array name="recycle_label">
+        <item>Upload Photo</item>
+        <item>Aluminium</item>
+        <item>Carton</item>
+        <item>Glass</item>
+        <item>Organic Waste</item>
+        <item>Paper and Cardboard</item>
+        <item>Plastic</item>
+        <item>Styrofoam</item>
+        <item>Textiles</item>
+    </string-array>
+
+    <string-array name="recycle_desc">
+        <item>Recycle your waste</item>
+        <item>8 ideas</item>
+        <item>6 ideas</item>
+        <item>10 ideas</item>
+        <item>4 ideas</item>
+        <item>20 ideas</item>
+        <item>12 ideas</item>
+        <item>4 ideas</item>
+        <item>8 ideas</item>
+    </string-array>
+
+    <string-array name="recycle_image">
+        <item>@drawable/waste_photo</item>
+        <item>@drawable/waste_aluminium</item>
+        <item>@drawable/waste_carton</item>
+        <item>@drawable/waste_glass</item>
+        <item>@drawable/waste_organic_waste</item>
+        <item>@drawable/waste_paper_and_cardboard</item>
+        <item>@drawable/waste_plastic</item>
+        <item>@drawable/waste_styrofoam</item>
+        <item>@drawable/waste_textiles</item>
+    </string-array>
+
+    <!-- Reward Items-->
+    <string-array name="reward_title">
+        <item>Electricity Token Rp20.000</item>
+        <item>Voucher Cashback Gopay Rp5.000</item>
+        <item>Plant Real Trees in Kalimantan</item>
+    </string-array>
+
+    <string-array name="reward_point">
+        <item>200</item>
+        <item>400</item>
+        <item>700</item>
+    </string-array>
+
+    <string-array name="reward_image">
+        <item>@drawable/reward_logo_pln</item>
+        <item>@drawable/reward_logo_gopay</item>
+        <item>@drawable/reward_logo_plant</item>
+    </string-array>
+
+    <string-array name="reward_banner">
+        <item>@drawable/reward_banner_pln</item>
+        <item>@drawable/reward_banner_gopay</item>
+        <item>@drawable/reward_banner_plant</item>
+    </string-array>
+
+    <string-array name="reward_detail">
+        <item>\u2022 Your accumulated points will be redeemed with Rp20.000 electricity token (token listrik PLN).\n\u2022 You can enter the 20 digit electricity token (electric token number) into the electric meter.\n\u2022 Terms and conditions apply.</item>
+        <item>\u2022 Your accumulated points will be redeemed with Rp5.000 cashback voucher.\n\u2022 The voucher can be used when shopping using Gopay.\n\u2022 Terms and conditions apply.</item>
+        <item>\u2022 You contribute a small sum of Rp10.000 for each redemption.\n\u2022 We purchase high-quality carbon credits and contribute to tree-planting projects in Indonesia.\n\u2022 The carbon credits from the project contribute to the protection and restoration of forests at risk of deforestation in Central Kalimantan, Indonesia.\n\u2022 This prevents the release of greenhouse gas emissions from deforestation activities.\n\u2022 They work with tree-planting partners to plant trees across Indonesia. This promotes the absorption of greenhouse gases from the atmosphere.</item>
+    </string-array>
+
 </resources>

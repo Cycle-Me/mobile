@@ -1,14 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.market.RewardsFragment">
+    tools:context=".ui.main.rewards.RewardsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/iv_purple_banner"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Market" />
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/rewards_purple_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/iv_white_banner"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/custom_rectangle_border_radius"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_purple_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_purple_banner" />
+
+    <TextView
+        android:id="@+id/tv_c_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/c_points"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/iv_white_banner"
+        app:layout_constraintTop_toTopOf="@+id/iv_white_banner" />
+
+    <ImageView
+        android:id="@+id/iv_c_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/c_points"
+        app:layout_constraintStart_toStartOf="@+id/tv_c_points"
+        app:layout_constraintTop_toBottomOf="@+id/tv_c_points" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/_0"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_c_points"
+        app:layout_constraintStart_toEndOf="@+id/iv_c_points"
+        app:layout_constraintTop_toTopOf="@+id/iv_c_points" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginHorizontal="38dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/custom_rectangle_border_radius"
+        android:backgroundTint="#D9D9D9"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_white_banner"
+        app:layout_constraintEnd_toEndOf="@+id/iv_white_banner"
+        app:layout_constraintStart_toStartOf="@+id/iv_white_banner" />
+
+    <!-- Base CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/base_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_purple_banner">
+
+        <!-- This is a ConstraintLayout for the entire CardView including the expandable portion -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/base_cardview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.511"
+            tools:layout_editor_absoluteX="-55dp">
+
+            <!-- This is a ConstraintLayout for the fixed portion of the CardView. The elements that
+            lie within the fixed portion of the CardView can be constrained to this layout -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fixed_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/list_of_subjects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/get_to_know_c_points"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- This is ImageButton for the expansion icon -->
+                <ImageButton
+                    android:id="@+id/arrow_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_expand_20"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- The following is the expandable portion whose visibility is initially set to 'gone'
+            The parent LinearLayout contains 3 child LinearLayouts that hold a subject name and an icon each -->
+            <LinearLayout
+                android:id="@+id/hidden_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fixed_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/what_is_c_points"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:justificationMode="inter_word"
+                    android:text="@string/what_is_c_points_description"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    tools:targetApi="o" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/what_can_c_points_do"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:justificationMode="inter_word"
+                    android:text="@string/what_can_c_points_do_description"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    tools:targetApi="o" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_rewards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/base_cardview"
+        tools:listitem="@layout/item_rewards" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

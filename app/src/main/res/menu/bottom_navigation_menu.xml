@@ -6,24 +6,24 @@
         android:icon="@drawable/ic_home_24"
         android:title="@string/home"
         />
-<!--    <item android:id="@+id/navigation_feed"-->
-<!--        android:enabled="true"-->
-<!--        android:icon="@drawable/ic_local_florist_24"-->
-<!--        android:title="@string/feed"-->
-<!--        />-->
+    <item android:id="@+id/navigation_feed"
+        android:enabled="true"
+        android:icon="@drawable/ic_local_florist_24"
+        android:title="@string/feed"
+        />
     <item android:id="@+id/navigation_recycle"
         android:enabled="true"
         android:icon="@drawable/ic_recycling_24"
         android:title="@string/recycle"
         />
-<!--    <item android:id="@+id/navigation_rewards"-->
-<!--        android:enabled="true"-->
-<!--        android:icon="@drawable/ic_monetization_on_24"-->
-<!--        android:title="@string/rewards"-->
-<!--        />-->
-<!--    <item android:id="@+id/navigation_account"-->
-<!--        android:enabled="true"-->
-<!--        android:icon="@drawable/ic_account_circle_24"-->
-<!--        android:title="@string/account"-->
-<!--        />-->
+    <item android:id="@+id/navigation_rewards"
+        android:enabled="true"
+        android:icon="@drawable/ic_monetization_on_24"
+        android:title="@string/rewards"
+        />
+    <item android:id="@+id/navigation_account"
+        android:enabled="true"
+        android:icon="@drawable/ic_account_circle_24"
+        android:title="@string/account"
+        />
 </menu>

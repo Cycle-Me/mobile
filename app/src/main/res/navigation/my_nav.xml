@@ -9,20 +9,23 @@
         android:id="@+id/navigation_home"
         android:name="com.example.cycleme.ui.main.home.HomeFragment"
         tools:layout="@layout/fragment_home" />
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_feed"-->
-<!--        android:name="com.example.cycleme.ui.main.feed.FeedFragment"-->
-<!--        tools:layout="@layout/fragment_feed" />-->
+
+    <fragment
+        android:id="@+id/navigation_feed"
+        android:name="com.example.cycleme.ui.main.feed.FeedFragment"
+        tools:layout="@layout/fragment_feed" />
     <fragment
         android:id="@+id/navigation_recycle"
         android:name="com.example.cycleme.ui.main.recycle.RecycleFragment"
         tools:layout="@layout/fragment_recycle" />
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_rewards"-->
-<!--        android:name="com.example.cycleme.ui.main.market.RewardsFragment"-->
-<!--        tools:layout="@layout/fragment_rewards" />-->
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_account"-->
-<!--        android:name="com.example.cycleme.ui.main.account.AccountFragment"-->
-<!--        tools:layout="@layout/fragment_account" />-->
+    <fragment
+        android:id="@+id/navigation_rewards"
+        android:name="com.example.cycleme.ui.main.rewards.RewardsFragment"
+        tools:layout="@layout/fragment_rewards" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.cycleme.ui.main.account.AccountFragment"
+        tools:layout="@layout/fragment_account" />
+
 </navigation>

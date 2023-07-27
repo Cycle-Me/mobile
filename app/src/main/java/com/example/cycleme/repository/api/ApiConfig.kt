@@ -12,6 +12,7 @@ class ApiConfig {
         private const val baseUrlMain = BuildConfig.BASE_URL_MAIN
         private const val baseUrlRecommendation = BuildConfig.BASE_URL_RECOMMENDATION
         private const val baseUrlPredict = BuildConfig.BASE_URL_PREDICT
+        private const val baseUrlFeedback = BuildConfig.BASE_URL_FEEDBACK
 
         fun getApiServiceMain(): ApiService {
             val loggingInterceptor = if (BuildConfig.DEBUG) {
@@ -19,8 +20,10 @@ class ApiConfig {
             } else {
                 HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.NONE)
             }
+            val cookieJar = CookieHandler()
             val client = OkHttpClient.Builder()
                 .addInterceptor(loggingInterceptor)
+                .cookieJar(cookieJar)
                 .build()
             val retrofit = Retrofit.Builder()
                 .baseUrl(baseUrlMain)
@@ -36,7 +39,7 @@ class ApiConfig {
             } else {
                 HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.NONE)
             }
-            val timeoutSeconds = 13L
+            val timeoutSeconds = 17L
             val client = OkHttpClient.Builder()
                 .addInterceptor(loggingInterceptor)
                 .connectTimeout(timeoutSeconds, TimeUnit.SECONDS)
@@ -57,7 +60,7 @@ class ApiConfig {
             } else {
                 HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.NONE)
             }
-            val timeoutSeconds = 13L
+            val timeoutSeconds = 17L
             val client = OkHttpClient.Builder()
                 .addInterceptor(loggingInterceptor)
                 .connectTimeout(timeoutSeconds, TimeUnit.SECONDS)
@@ -66,6 +69,27 @@ class ApiConfig {
                 .build()
             val retrofit = Retrofit.Builder()
                 .baseUrl(baseUrlPredict)
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(client)
+                .build()
+            return retrofit.create(ApiService::class.java)
+        }
+
+        fun getApiServiceFeedback(): ApiService {
+            val loggingInterceptor = if (BuildConfig.DEBUG) {
+                HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
+            } else {
+                HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.NONE)
+            }
+            val timeoutSeconds = 8L
+            val client = OkHttpClient.Builder()
+                .addInterceptor(loggingInterceptor)
+                .connectTimeout(timeoutSeconds, TimeUnit.SECONDS)
+                .readTimeout(timeoutSeconds, TimeUnit.SECONDS)
+                .writeTimeout(timeoutSeconds, TimeUnit.SECONDS)
+                .build()
+            val retrofit = Retrofit.Builder()
+                .baseUrl(baseUrlFeedback)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()

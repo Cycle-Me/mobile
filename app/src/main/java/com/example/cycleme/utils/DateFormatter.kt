@@ -1,7 +1,8 @@
 package com.example.cycleme.utils
 
 import java.text.SimpleDateFormat
-import java.util.*
+import java.util.Locale
+import java.util.TimeZone
 
 object DateFormatter {
     fun String.withDateFormat(timeZoneId: String): String {

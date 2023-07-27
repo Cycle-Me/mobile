@@ -8,10 +8,10 @@ import androidx.lifecycle.viewModelScope
 import com.example.cycleme.model.RegisterRequest
 import com.example.cycleme.model.RegisterResponse
 import com.example.cycleme.repository.api.ApiConfig
+import com.example.cycleme.utils.Result
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import com.example.cycleme.data.Result
 
 class RegisterViewModel: ViewModel() {
     fun postRegister(request: RegisterRequest): LiveData<Result<RegisterResponse>> {

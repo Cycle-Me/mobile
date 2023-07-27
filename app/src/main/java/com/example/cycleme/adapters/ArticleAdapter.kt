@@ -10,6 +10,7 @@ class ArticleAdapter(
     val list: List<Article>? = emptyList(),
     private val onClick: ((Article) -> Unit)? = null
 ) : RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemArticleBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)

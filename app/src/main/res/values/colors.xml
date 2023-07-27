@@ -68,6 +68,7 @@
     <color name="white">#FFFFFF</color>
     <color name="grayLight">#EFEFEF</color>
     <color name="grayBold">#A4A4A4</color>
+    <color name="grayDark">#7F7F7F</color>
     <color name="header_pink">#F3EDF7</color>
 
 </resources>

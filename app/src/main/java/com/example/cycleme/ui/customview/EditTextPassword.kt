@@ -1,16 +1,13 @@
 package com.example.cycleme.ui.customview
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.AttributeSet
-import android.view.MotionEvent
 import android.view.View
 import androidx.appcompat.widget.AppCompatEditText
 import com.example.cycleme.R
-import com.google.android.material.textfield.TextInputLayout
 
 class EditTextPassword : AppCompatEditText {
 

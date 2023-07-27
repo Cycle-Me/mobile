@@ -1,8 +1,8 @@
 package com.example.cycleme.model
 
-import kotlinx.parcelize.Parcelize
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
 data class RegisterRequest(
     val name: String? = null,
@@ -37,38 +37,14 @@ data class LoginResult(
 ) : Parcelable
 
 @Parcelize
-data class CheckLogin(
+data class LoginDataOnSession(
     var isLogin: Boolean = false,
     var uuid: String? = null,
     var name: String? = null,
-    var sessionID: String? = null
+    var email: String? = null,
+    var sessionID: String? = null,
+    var password: String? = null
 ) : Parcelable
-
-@Parcelize
-data class StoriesResponse(
-    @field:SerializedName("StoriesResponse")
-    val storiesResponse: List<StoriesResponseItem?>? = null
-) : Parcelable
-
-@Parcelize
-data class StoriesResponseItem(
-    @field:SerializedName("attachment")
-    val attachment: String? = null,
-
-    @field:SerializedName("description")
-    val description: String? = null,
-
-    @field:SerializedName("uuid")
-    val uuid: String? = null,
-
-    @field:SerializedName("user")
-    val user: String? = null
-) : Parcelable
-
-data class FileUploadResponse(
-    @field:SerializedName("msg")
-    val msg: String
-)
 
 @Parcelize
 data class PredictResponse(
@@ -81,11 +57,6 @@ data class PredictResponse(
 
 data class RecommendationRequest(
     val category: String? = null,
-)
-
-data class RecommendationResponseList(
-    @field:SerializedName("RecommendationResponseList")
-    val recommendationResponseList: List<RecommendationResponse?>? = null
 )
 
 @Parcelize
@@ -102,5 +73,90 @@ data class RecommendationResponse(
     @field:SerializedName("desc")
     val desc: String? = null
 ) : Parcelable
+
+// Response
+@Parcelize
+data class StoriesResponse(
+
+    @field:SerializedName("attachment")
+    val attachment: String? = null,
+
+    @field:SerializedName("description")
+    val description: String? = null,
+
+    @field:SerializedName("uuid")
+    val uuid: String? = null,
+
+    @field:SerializedName("user")
+    val user: UserDetail? = null
+) : Parcelable
+
+@Parcelize
+data class UserDetail(
+
+    @field:SerializedName("name")
+    val name: String? = null,
+
+    @field:SerializedName("email")
+    val email: String? = null
+) : Parcelable
+
+data class LogoutResponse(
+    @field:SerializedName("msg")
+    val msg: String? = null
+)
+
+data class FeedbackData(
+    val email: String,
+    val subject: String,
+    val message: String
+)
+
+data class ChangeProfileRequest(
+    val name: String,
+    val email: String,
+    val password: String,
+    val confPassword: String
+)
+
+data class ChangeProfileResponse(
+    @field:SerializedName("msg")
+    val msg: String? = null
+)
+
+data class UploadFeedResponse(
+
+    @field:SerializedName("msg")
+    val msg: String? = null,
+
+    @field:SerializedName("createdStory")
+    val createdStory: CreatedStory? = null
+)
+
+data class CreatedStory(
+
+    @field:SerializedName("createdAt")
+    val createdAt: String? = null,
+
+    @field:SerializedName("attachment")
+    val attachment: String? = null,
+
+    @field:SerializedName("description")
+    val description: String? = null,
+
+    @field:SerializedName("id")
+    val id: Int? = null,
+
+    @field:SerializedName("uuid")
+    val uuid: String? = null,
+
+    @field:SerializedName("userId")
+    val userId: Int? = null,
+
+    @field:SerializedName("updatedAt")
+    val updatedAt: String? = null
+)
+
+
 
 
